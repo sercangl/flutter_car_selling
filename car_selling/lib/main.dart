@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Car Selling',
+      title: 'Find Pet',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: MyHomePage(title: 'Car Selling App'),
+      home: MyHomePage(title: 'Find the pets'),
     );
   }
 }
