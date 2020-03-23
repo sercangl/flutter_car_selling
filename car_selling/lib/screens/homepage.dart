@@ -10,16 +10,34 @@ class HomePage extends StatelessWidget {
             appBar: AppBar(
               title: Text('Car Selling App'),
             ),
-            body: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                const SizedBox(height: 30),
-                RaisedButton(
-                  onPressed: () {},
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(0.0),
-                )
-              ],
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red)),
+                    onPressed: () {},
+                    color: Colors.red,
+                    textColor: Colors.white,
+                    padding: const EdgeInsets.all(30.0),
+                    child: const Text('Satılan Araçları gör',
+                        style: TextStyle(fontSize: 20)),
+                  ),
+                  RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red)),
+                    color: Colors.white,
+                    onPressed: () {},
+                    textColor: Colors.red,
+                    padding: const EdgeInsets.all(30.0),
+                    child: const Text('Aracınızı ilana ekle',
+                        style: TextStyle(fontSize: 20)),
+                  )
+                ],
+              ),
             )));
   }
 }
